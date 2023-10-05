@@ -1,100 +1,208 @@
-<table width="100%">
+<html>
+<head>
+  <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css"/>
+  <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css"/>
+  <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css"/>
+  <link rel="stylesheet" href="/lib/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
 
-    <tr>
-        <td valign="top">
-            <h2>Kanbas Navigation</h2>
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account </a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html"> Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html"> Courses</a></li>
-            </ul>                 
-        </td>
+<body>
+<input type="checkbox" id="left-sidebar-toggle" class="d-none">
+<label for="left-sidebar-toggle" class="d-md-none">
+  <a href="/Kanbas/KanbasNavigation"><i class="fa fa-bars" aria-hidden="true"></i></a>
+</label>
 
-        <td valign="top">
-            <h2>Course Navigation</h2>
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home </a></li>
-                <li><a href="/Kanbas/Courses/Modules/screen.html"> Modules</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-                <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
-            </ul>   
-        </td>
+<input type="checkbox" id="right-sidebar-toggle" class="d-none">
+<label for="left-sidebar-toggle" class="d-md-none" style="position: fixed; right: 5px;">
+  <a href="/Kanbas/Courses/CourseNavigation"><i class="fa fa-chevron-down"
+                                                aria-hidden="true"></i></a>
+</label>
 
-        <td valign="top">
-            <h2>Modules</h2>
-            <button>Collapse All</button>
-            <button>View Progress</button>
-            <select>
-                <option>Public All</option>
-                <option>Public all items and modules</option>
-                <option>Unpublish</option>
-            </select>
-            <button>+ Modules</button>
+<div class="wd-flex-row-container">
+  <div class="wd-bg-color-black d-none d-md-block ">
+    <ul class="wd-Kanbas-navigation">
+      <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"
+                                                           aria-hidden="true"></i>Account</a></li>
+      <li><a href="/Kanbas/Dashboard/screen.html"> <i class="fa fa-tachometer"
+                                                      aria-hidden="true"></i>Dashboard</a></li>
+      <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"> <i class="fa fa-book"
+                                                                           aria-hidden="true"></i>Courses</a>
+      </li>
+      <li><a href="/Kanbas/Calender/screen.html"><i class="fa fa-calendar" aria-hidden="true"></i>Calender</a>
+      </li>
+      <li><a href="/Kanbas/Inbox/screen.html"> <i class="fa fa-inbox" aria-hidden="true"></i></br>
+        Inbox</a></li>
+    </ul>
+  </div>
 
-            <ul>
-                <li>week 0
-                    <ul>
-                        <li>
-                        Learning Objectives
-                        <ul>
-                            <li>Intro to the course</li>
-                            <li>Environment set up</li>
-                        </ul>
-                        </li>
-                        <li>
-                            Reading
-                            <ul>
-                                <li>Chapter 1</li>
-                                <li>Chapter 2</li>
-                            </ul>
-                            </li>
-                    </ul>
-                </li>
-                <li>week 1
-                    <ul>
-                        <li>
-                        Learning Objectives
-                        <ul>
-                            <li>Create user interfaces with HTML</li>
-                            <li>Deploy project to Netlify</li>
-                        </ul>
-                        </li>
-                        <li>
-                            Reading
-                            <ul>
-                                <li>Chapter 3</li>
-                                <li>Chapter 4</li>
-                            </ul>
-                            </li>
-                    </ul>
-                </li>
-                <li>week 2</li>
-                <li>week 3</li>
-                <li>week 4</li>
-            </ul>
-        </td>
-        <td valign="top">
-            <h2>Course Status</h2>
-<button>Unpublished</button>
-<button>Published</button>
-<ul>
-    <li>Import Existing Content</li>
-    <li>Import from Commons</li>
-    <li>Choose Home Page</li>
-    <li>View Course Stream</li>
-    <li>New Announcements</li>
-    <li>New Analytics</li>
-    <li>View Course Notifications</li>
-</ul>
-<h2>Coming Up</h2>
-View Calendar
-<ul>
-    <li>Lecture 1</li>
-    <li>Lecture 2</li>
-    <li>Lecture 3</li>
-</ul>
 
-        </td>
-    </tr>
-</table>
+  <div>
+    <ul class="wd-course-navigation d-none d-md-block">
+      <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+      <li><a href="/Kanbas/Courses/Modules/screen.html"> Modules</a></li>
+      <li><a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a></li>
+      <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+      <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="wd-flex-grow-1">
+
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/Kanbas/Dashboard/screen.html">CS 5610 Fall 2023</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+    </nav>
+    <hr/>
+    <div class="float-end">
+      <button type="button" class="btn btn-secondary btn-sm">Collapse All</button>
+      <button type="button" class="btn btn-secondary btn-sm">View Progress</button>
+
+
+      <button class="dropdown btn btn-secondary btn-sm dropdown-toggle" type="button"
+              id="publishDropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+        Actions
+      </button>
+      <div class="dropdown-menu" aria-labelledby="publishDropdown">
+        <a class="dropdown-item" href="#">Public All</a>
+        <a class="dropdown-item" href="#">Public all items and modules</a>
+        <a class="dropdown-item" href="#">Unpublish</a>
+      </div>
+
+      <button type="button" class="btn btn-danger btn-sm">+ Modules</button>
+    </div>
+    </br>
+    <hr/>
+
+
+    <div class="list-group">
+      <div class="list-group-item list-group-item-secondary wd-active">week 0-INTRO
+        <div class="float-end">
+          <i class="fa fa-check-circle me-2" aria-hidden="true">
+          </i><i class="fa fa-plus me-2" aria-hidden="true">
+        </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="list-group-item wd-active">Learning Objectives
+        <div class="float-end">
+          <i class="fa fa-check-circle me-2" aria-hidden="true">
+          </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="list-group">
+        <div class="list-group-item ps-5 wd-active">Intro to the course
+          <div class="float-end">
+            <i class="fa fa-check-circle me-2" aria-hidden="true">
+            </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="list-group-item ps-5 wd-active">Environment set up
+          <div class="float-end">
+            <i class="fa fa-check-circle me-2" aria-hidden="true">
+            </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-group-item wd-active">Reading
+        <div class="float-end">
+          <i class="fa fa-check-circle me-2" aria-hidden="true">
+          </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="list-group">
+        <div class="list-group-item ps-5 wd-active"><a href="#">Chapter 1</a>
+          <div class="float-end">
+            <i class="fa fa-check-circle me-2" aria-hidden="true">
+            </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="list-group-item ps-5 wd-active"><a href="#">Chapter 2</a>
+          <div class="float-end">
+            <i class="fa fa-check-circle me-2" aria-hidden="true">
+            </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-group-item list-group-item-secondary wd-active">week 1-HTML
+        <div class="float-end">
+          <i class="fa fa-check-circle me-2" aria-hidden="true">
+          </i><i class="fa fa-plus me-2" aria-hidden="true">
+        </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="list-group-item wd-active">Learning Objectives
+        <div class="float-end">
+          <i class="fa fa-check-circle me-2" aria-hidden="true">
+          </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="list-group">
+        <div class="list-group-item ps-5 wd-active">Create user interfaces with HTML
+          <div class="float-end">
+            <i class="fa fa-check-circle me-2" aria-hidden="true">
+            </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="list-group-item ps-5 wd-active">Deploy project to Netlify
+          <div class="float-end">
+            <i class="fa fa-check-circle me-2" aria-hidden="true">
+            </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-group-item wd-active">Reading
+        <div class="float-end">
+          <i class="fa fa-check-circle me-2" aria-hidden="true">
+          </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="list-group">
+        <div class="list-group-item ps-5 wd-active"><a href="#">Chapter 3</a>
+          <div class="float-end">
+            <i class="fa fa-check-circle me-2" aria-hidden="true">
+            </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="list-group-item ps-5 wd-active"><a href="#">Chapter 4</a>
+          <div class="float-end">
+            <i class="fa fa-check-circle me-2" aria-hidden="true">
+            </i><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="ps-3 pe-3 float-end">
+    <h2>Course Status</h2>
+    <button type="button" class="btn btn-secondary btn-sm">Unpublished</button>
+    <button type="button" class="btn btn-secondary btn-sm">Published</button>
+    </br></br>
+    <ul class="list-group">
+      <li class="list-group-item">Import Existing Content</li>
+      <li class="list-group-item">Import from Commons</li>
+      <li class="list-group-item">Choose Home Page</li>
+      <li class="list-group-item">View Course Stream</li>
+      <li class="list-group-item">New Announcements</li>
+      <li class="list-group-item">New Analytics</li>
+      <li class="list-group-item">View Course Notifications</li>
+    </ul>
+    </br>
+    <h2>Coming Up</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Lecture 1</li>
+      <li class="list-group-item">Lecture 2</li>
+      <li class="list-group-item">Lecture 3</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

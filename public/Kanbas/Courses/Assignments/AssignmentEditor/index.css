@@ -1,0 +1,15 @@
+.form-label{
+  margin: 8px;
+}
+.form-control{
+  margin: 8px;
+}
+
+.form-check{
+  margin: 8px;
+}
+
+.btn.btn-sm a {
+  color: white;
+  text-decoration: none;
+}

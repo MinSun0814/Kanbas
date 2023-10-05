@@ -1,86 +1,124 @@
-<select>
-    <option>Speed Grader</option>
-    <option>Manual Grading</option> 
-    <option>View Submissions</option>
-</select>
-<hr />
+<link rel="stylesheet" href="/lib/bootstrap/bootstrap.css"/>
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css"/>
+<link rel="stylesheet" href="/styles.css"/>
+<link rel="stylesheet" href="./index.css"/>
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/Kanbas/Dashboard/screen.html">CS 5610 Fall 2023</a></li>
+      <li class="breadcrumb-item"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Assignment Editor</li>
+    </ol>
+  </nav>
 
-<h2>Assignment Name</h2>
-<input placeholder="Assignment 1"/><br/>
-<h3>Description</h3>
-<textarea cols="40" rows="5" placeholder="This is the assignment description."></textarea>
-<h3>Points</h3>
-<input type="number" max= 100 min = 0 placeholder="100"/>
+      <div>
+        <label >Assignment Name</label>
+        <input type="number" class="form-control" max="100" min="0" placeholder="A1">
+      </div>
 
-<h3>Assignment Groups</h3>
-<select>
-    <option>Assignments</option>
-    <option>Quizzes</option>
-    <option>Exams</option>
-    <option>Project</option>
-</select>
+      <div>
+        <label >Description</label>
+        <textarea class="form-control" rows="5" placeholder="This is the assignment description."></textarea>
+      </div>
 
-<h3>Display Grade as</h3>
-<select>
-    <option>Percentage</option>
-    <option>Points</option>
-    <option>Letter Grade</option>
-</select>
-
-<h3>Submission Type</h3>
-<select>
-    <option>Online</option>
-    <option>On Paper</option>
-    <option>No Submission</option>
-</select>
-
-<h3>Online Entry Options</h3>
-<input type="checkbox" /> Text Entry<br/>
-<input type="checkbox" /> Website URL<br/>
-<input type="checkbox" /> Media Recordings<br/>
-<input type="checkbox" /> Student Annotation<br/>
-<input type="checkbox" /> File Uploads
-
-<h3>Submission Attempts</h3>
-<select>
-    <option>Unlimited</option>
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-</select>
-
-<h3>Plagiarism Review</h3>
-<select>
-    <option>None</option>
-    <option>Automated</option>
-    <option>External Tool</option>
-</select>
-
-<h3>Group Assignment</h3>
-<input type="checkbox"/>This is a group assignment
-
-<h3>Peer Review</h3>
-<input type="checkbox"/>Require peer reviews
-
-<h3>Assign</h3>
-Assign to<br/>
-<input placeholder="Everyone">
-
-<h3>Due</h3>
-<input type="date" id="text-fields-date" value="2023-09-18"/>
-
-<h3>Available from</h3>
-<input type="date" id="text-fields-date" value="2023-09-18"/>
-
-<h3>Until</h3>
-<input type="date" id="text-fields-date" value="2023-09-18"/>
-<br/>
-<br/>
-
-<button><a href="/Kanbas/Courses/Assignments/screen.html">cancel</a></button>
-<button><a href="/Kanbas/Courses/Assignments/screen.html">save</a></button>
-
-    
+    <div>
+      <label>Points</label>
+      <input type="number" class="form-control" max="100" min="0" placeholder="100">
+    </div>
 
 
+        <label>Assignment Groups</label>
+        <select class="form-control">
+          <option>Assignments</option>
+          <option>Quizzes</option>
+          <option>Exams</option>
+          <option>Project</option>
+        </select>
 
+    <label>Display Grade as</label>
+    <select class="form-control">
+      <option>Percentage</option>
+      <option>Points</option>
+      <option>Letter Grade</option>
+    </select>
+
+    <label>Submission Type</label>
+    <select class="form-control">
+      <option>Online</option>
+      <option>On Paper</option>
+      <option>No Submission</option>
+    </select>
+
+
+    <label>Submission Attempts</label>
+    <select class="form-control">
+      <option>1</option>
+      <option>2</option>
+      <option>Unlimited</option>
+    </select>
+
+
+    <label>Plagiarism Review</label>
+    <select class="form-control">
+      <option>None</option>
+      <option>Automated</option>
+      <option>Externam Tool</option>
+    </select>
+
+    <label >Online Text Entry</label><br>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input">
+      <label class="form-check-label">Text Entry</label>
+    </div>
+
+    <label >Group Assignment</label><br>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input">
+      <label class="form-check-label" >This is a group assignment</label>
+    </div>
+
+
+    <label >Peer Revuiew</label><br>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input">
+      <label class="form-check-label" >Require peer review</label>
+    </div>
+
+<form>
+  <h3>Assign</h3>
+
+  <div class="row mb-3">
+    <div class="col-md-4">
+      <label for="assignTo">Assign to</label>
+      <input type="text" id="assignTo" class="form-control" placeholder="Everyone">
+    </div>
+  </div>
+
+    <div class="col-md-4">
+      <label>Due</label>
+      <input type="date"  class="form-control" placeholder="2023-01-01">
+    </div>
+    <div class="row mb-3">
+    <div class="col-md-4">
+      <label>Available from</label>
+      <input type="date" class="form-control" placeholder="2023-01-01">
+    </div>
+
+    <div class="col-md-4">
+      <label >Until</label>
+      <input type="date" class="form-control" placeholder="2023-01-01">
+    </div>
+  </div>
+</form>
+
+<div class="float-end">
+<button type="button" class="btn btn-secondary btn-sm">
+  <a href="/Kanbas/Courses/Assignments/screen.html">
+    Cancel
+  </a>
+</button>
+<button type="button" class="btn btn-danger btn-sm">
+  <a href="/Kanbas/Courses/Assignments/screen.html">
+    Save
+  </a>
+</button>
+</div>

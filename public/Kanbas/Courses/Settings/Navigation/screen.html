@@ -1,52 +1,94 @@
-<table width="100%">
-    <tr>
-        <td valign="top">
-            <h2>Settings</h2>
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account </a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html"> Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html"> Courses</a></li>
-            </ul>                 
-        </td>
+<html>
+<head>
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css"/>
+    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css"/>
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/styles.css"/>
+</head>
 
-        <td valign="top">
-            <h2>Course Navigation</h2>
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home </a></li>
-                <li><a href="/Kanbas/Courses/Modules/screen.html"> Modules</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-                <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
-            </ul>   
-        </td>
+<body>
+<input type="checkbox" id="left-sidebar-toggle" class="d-none">
+<label for="left-sidebar-toggle" class="d-md-none">
+    <a href="/Kanbas/KanbasNavigation"><i class="fa fa-bars" aria-hidden="true"></i></a>
+</label>
 
-        <td valign="top">
-            <h2>Navigation</h2>
-<button><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Course Details</a></button>
-<button><a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a></button>
-<p>Drag and drop courses here to render them in the course navigation</p>
-<ul>
-    <li>Home</li>
-    <li>Modules</li>
-    <li>Piazza</li>
-    <li>Zoom Meetings</li>
-    <li>Assignments</li>
-    <li>Quizzes</li>
-    <li>Grades</li>
-    <li>People</li>
-    <li>Panopto Videos</li>
-</ul>
-<p>Drag items here to hide them from Students</p>
-<ul>
-    <li>Chat</li>
-    <li>SCORM</li>
-    <li>Attendance</li>
-    <li>Top Hat</li>
-    <li>Syllabus</li>
-    <li>Perusall</li>
-    <li>Microsoft Team Meetings</li>
-</ul>
-<button>save</button>
-        </td>
-    </tr>
-</table>
+<input type="checkbox" id="right-sidebar-toggle" class="d-none">
+<label for="left-sidebar-toggle" class="d-md-none" style="position: fixed; right: 5px;">
+    <a href="/Kanbas/Courses/CourseNavigation"><i class="fa fa-chevron-down"
+                                                  aria-hidden="true"></i></a>
+</label>
+
+<div class="wd-flex-row-container">
+    <div class="wd-bg-color-black d-none d-md-block ">
+        <ul class="wd-Kanbas-navigation">
+            <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"
+                                                                 aria-hidden="true"></i>Account</a></li>
+            <li><a href="/Kanbas/Dashboard/screen.html"> <i class="fa fa-tachometer"
+                                                            aria-hidden="true"></i>Dashboard</a></li>
+            <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"> <i class="fa fa-book"
+                                                                                 aria-hidden="true"></i>Courses</a>
+            </li>
+            <li><a href="/Kanbas/Calender/screen.html"><i class="fa fa-calendar" aria-hidden="true"></i>Calender</a>
+            </li>
+            <li><a href="/Kanbas/Inbox/screen.html"> <i class="fa fa-inbox" aria-hidden="true"></i></br>
+                Inbox</a></li>
+        </ul>
+    </div>
+
+
+    <div>
+        <ul class="wd-course-navigation d-none d-md-block">
+            <li><a href="/Kanbas/Courses/Home/screen.html">Home </a></li>
+            <li><a href="/Kanbas/Courses/Modules/screen.html"> Modules</a></li>
+            <li><a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a></li>
+            <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+            <li class="wd-active"><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="wd-flex-grow-1 ms-3">
+
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/Kanbas/Dashboard/screen.html">CS 5610 Fall 2023</a></li>
+                <li class="breadcrumb-item active">Settings</li>
+                <li class="breadcrumb-item active" aria-current="pages">Navigation</li>
+            </ol>
+        </nav>
+
+        <button type="button" class="btn btn-secondary   btn-sm">
+            <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Course Details</a>
+        </button>
+        <button type="button" class="btn btn-secondary   btn-sm">
+            <a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a>
+        </button>
+        <p>Drag and drop courses here to render them in the course navigation</p>
+        <ul class="list-group">
+            <li class="list-group-item">Home</li>
+            <li class="list-group-item">Modules</li>
+            <li class="list-group-item">Piazza</li>
+            <li class="list-group-item">Zoom Meetings</li>
+            <li class="list-group-item">Assignments</li>
+            <li class="list-group-item">Quizzes</li>
+            <li class="list-group-item">Grades</li>
+            <li class="list-group-item">People</li>
+            <li class="list-group-item">Panopto Videos</li>
+        </ul>
+        <p>Drag items here to hide them from Students</p>
+        <ul class="list-group">
+            <li class="list-group-item">Chat</li>
+            <li class="list-group-item">SCORM</li>
+            <li class="list-group-item">Attendance</li>
+            <li class="list-group-item">Top Hat</li>
+            <li class="list-group-item">Syllabus</li>
+            <li class="list-group-item">Perusall</li>
+            <li class="list-group-item">Microsoft Team Meetings</li>
+        </ul>
+        <button type="button" class="btn btn-danger btn-sm">
+            <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Save</a>
+        </button>
+    </div>
+</div>
+</body>
+</html>
