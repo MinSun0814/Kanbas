@@ -9,7 +9,6 @@ import TernaryOperator from "./TernaryOperator";
 import VariablesAndConstants from "./VariablesAndConstants";
 import VariableTypes from "./VariableTypes";
 import WorkingWithArrays from "./WorkingWithArrays";
-
 function JavaScript() {
   console.log("Hello world");
   return(
