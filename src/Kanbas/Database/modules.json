@@ -1,0 +1,98 @@
+[
+  {
+    "_id": "M101",
+    "name": "Introduction to Rocket Propulsion",
+    "description": "Basic principles of rocket propulsion and rocket engines.",
+    "course": "RS101",
+    "lessons": [
+      {
+        "name": "Rocket I",
+        "description": "Rocket propulsion is the science of accelerating matter to extreme velocities. It is the foundation of spaceflight and the key to exploring the cosmos. This course will introduce you to the basic principles of rocket propulsion and rocket engines. You will learn about the history of rocketry, the basic concepts of rocket propulsion, and the design of rocket engines. You will also learn about the different types of rocket engines and their applications."
+      },
+      {
+        "name": "Rocket II",
+        "description": "This course is designed for students who are interested in learning about rocket propulsion and rocket engines. It is also suitable for anyone who wants to learn more about the history of rocketry and the basic concepts of rocket propulsion."
+      },
+      {
+        "name": "Rocket III",
+        "description": "This course is part of the Rocket Science series, which includes courses on rocket propulsion, rocket engines, and rocket design. If you are interested in learning more about rocket science, check out our other courses!"
+      }
+    ]
+  },
+  {
+    "_id": "M102",
+    "name": "Fuel and Combustion",
+    "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+    "course": "RS101",
+    "lessons": [
+      {
+        "name": "Fuel I",
+        "description": "Rocket fuel is a type of propellant used in rockets to produce thrust. It is typically made from a mixture of liquid oxygen and liquid hydrogen, which are stored in separate tanks. When the rocket is launched, the liquid oxygen and liquid hydrogen are mixed together to create a chemical reaction that produces heat and water vapor. This reaction produces enough energy to propel the rocket forward."
+      },
+      {
+        "name": "Fuel II",
+        "description": "Rocket fuel is a type of propellant used in rockets to produce thrust. It is typically made from a mixture of liquid oxygen and liquid hydrogen, which are stored in separate tanks. When the rocket is launched, the liquid oxygen and liquid hydrogen are mixed together to create a chemical reaction that produces heat and water vapor. This reaction produces enough energy to propel the rocket forward."
+      },
+      {
+        "name": "Fuel III",
+        "description": "Rocket fuel is a type of propellant used in rockets to produce thrust. It is typically made from a mixture of liquid oxygen and liquid hydrogen, which are stored in separate tanks. When the rocket is launched, the liquid oxygen and liquid hydrogen are mixed together to create a chemical reaction that produces heat and water vapor. This reaction produces enough energy to propel the rocket forward."
+      }
+    ]
+  },
+  {
+    "_id": "M103",
+    "name": "Nozzle Design",
+    "description": "Principles of rocket nozzle design and performance optimization.",
+    "course": "RS101",
+    "lessons": [
+      {
+        "name": "Nozzle I",
+        "description": "Rocket nozzles are the most important part of a rocket engine. They are responsible for directing the flow of hot gases from the combustion chamber into the atmosphere. The design of a rocket nozzle is critical to its performance, and it can be optimized to increase thrust or reduce weight."
+      },
+      {
+        "name": "Nozzle II",
+        "description": "Rocket nozzles are the most important part of a rocket engine. They are responsible for directing the flow of hot gases from the combustion chamber into the atmosphere. The design of a rocket nozzle is critical to its performance, and it can be optimized to increase thrust or reduce weight."
+      },
+      {
+        "name": "Nozzle III",
+        "description": "Rocket nozzles are the most important part of a rocket engine. They are responsible for directing the flow of hot gases from the combustion chamber into the atmosphere. The design of a rocket nozzle is critical to its performance, and it can be optimized to increase thrust or reduce weight."
+      }
+    ]
+  },
+  {
+    "_id": "M201",
+    "name": "Fundamentals of Aerodynamics",
+    "description": "Basic aerodynamic concepts and fluid dynamics principles.",
+    "course": "RS102"
+  },
+  {
+    "_id": "M202",
+    "name": "Subsonic and Supersonic Flow",
+    "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
+    "course": "RS102"
+  },
+  {
+    "_id": "M203",
+    "name": "Aerodynamic Heating",
+    "description": "Study of aerodynamic heating and thermal protection systems.",
+    "course": "RS102"
+  },
+  {
+    "_id": "M301",
+    "name": "Spacecraft Structural Design",
+    "description": "Fundamentals of designing spacecraft structures and materials selection.",
+    "course": "RS103"
+  },
+  {
+    "_id": "M302",
+    "name": "Orbital Mechanics",
+    "description": "Understanding orbital dynamics and mission planning.",
+    "course": "RS103"
+  },
+  {
+    "_id": "M303",
+    "name": "Spacecraft Systems Engineering",
+    "description": "Overview of spacecraft systems and subsystems engineering.",
+    "course": "RS103"
+  }
+]

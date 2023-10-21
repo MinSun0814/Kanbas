@@ -1,0 +1,45 @@
+  .wd-Kanbas-navigation {
+    background: black;
+    list-style: none;
+    padding: 0px;
+    width: 80px;
+    margin: 0px;
+  }
+
+  .wd-Kanbas-navigation .list-group-item:last-child,
+  .wd-Kanbas-navigation .list-group-item.active:last-child,
+  .wd-Kanbas-navigation.list-group{
+    border-radius: 0px;
+  }
+
+  .wd-Kanbas-navigation a {
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: black;
+    border: none;
+  }
+
+  .wd-Kanbas-navigation a.active {
+    background-color: white;
+    color: red;
+  }
+
+  .wd-Kanbas-navigation a i {
+    color: red;
+    font-size: 2em;
+    margin-bottom: 5px;
+  }
+
+  /* Default color for the Account icon */
+  .wd-Kanbas-navigation .account-link svg {
+    color: white;
+  }
+
+  /* Color for the Account icon when selected/active */
+  .wd-Kanbas-navigation .account-link.active svg {
+    color: black;
+  }

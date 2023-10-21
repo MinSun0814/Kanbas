@@ -21,6 +21,7 @@
             </ul>   
         </td>
 
+<<<<<<< Updated upstream
         <td valign="top">
             <h2>Assignment Editor</h2>
             <select>
@@ -107,3 +108,161 @@
         </td>
     </tr>
 </table>
+=======
+
+<div class="wd-flex-row-container">
+  <div class="wd-bg-color-black d-none d-md-block ">
+    <ul class="wd-Kanbas-navigation">
+      <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"
+                                                           aria-hidden="true"></i>Account</a></li>
+      <li><a href="/Kanbas/Dashboard/screen.html"> <i class="fa fa-tachometer"
+                                                      aria-hidden="true"></i>Dashboard</a></li>
+      <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"> <i class="fa fa-book"
+                                                                           aria-hidden="true"></i>Index</a>
+      </li>
+      <li><a href="/Kanbas/Calender/screen.html"><i class="fa fa-calendar" aria-hidden="true"></i>Calender</a>
+      </li>
+      <li><a href="/Kanbas/Inbox/screen.html"> <i class="fa fa-inbox" aria-hidden="true"></i></br>
+        Inbox</a></li>
+    </ul>
+  </div>
+
+
+  <div>
+    <ul class="wd-course-navigation d-none d-md-block">
+      <li><a href="/Kanbas/Courses/Home/screen.html">Home </a></li>
+      <li><a href="/Kanbas/Courses/Modules/screen.html"> Modules</a></li>
+      <li class="wd-active"><a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a></li>
+      <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+      <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
+    </ul>
+  </div>
+
+
+  <div class="container">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/Kanbas/Dashboard/screen.html">CS 5610 Fall 2023</a>
+        </li>
+        <li class="breadcrumb-item"><a
+            href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Assignment Editor</li>
+      </ol>
+    </nav>
+
+    <div>
+      <label>Assignment Name</label>
+      <input type="number" class="form-control" max="100" min="0" placeholder="A1">
+    </div>
+
+    <div>
+      <label>Description</label>
+      <textarea class="form-control" rows="5"
+                placeholder="This is the assignment description."></textarea>
+    </div>
+
+    <div>
+      <label>Points</label>
+      <input type="number" class="form-control" max="100" min="0" placeholder="100">
+    </div>
+
+
+    <label>Assignment Groups</label>
+    <select class="form-control">
+      <option>Assignments</option>
+      <option>Quizzes</option>
+      <option>Exams</option>
+      <option>Project</option>
+    </select>
+
+    <label>Display Grade as</label>
+    <select class="form-control">
+      <option>Percentage</option>
+      <option>Points</option>
+      <option>Letter Grade</option>
+    </select>
+
+    <label>Submission Type</label>
+    <select class="form-control">
+      <option>Online</option>
+      <option>On Paper</option>
+      <option>No Submission</option>
+    </select>
+
+
+    <label>Submission Attempts</label>
+    <select class="form-control">
+      <option>1</option>
+      <option>2</option>
+      <option>Unlimited</option>
+    </select>
+
+
+    <label>Plagiarism Review</label>
+    <select class="form-control">
+      <option>None</option>
+      <option>Automated</option>
+      <option>Externam Tool</option>
+    </select>
+
+    <label>Online Text Entry</label><br>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input">
+      <label class="form-check-label">Text Entry</label>
+    </div>
+
+    <label>Group Assignment</label><br>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input">
+      <label class="form-check-label">This is a group assignment</label>
+    </div>
+
+
+    <label>Peer Review</label><br>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input">
+      <label class="form-check-label">Require peer review</label>
+    </div>
+
+    <form>
+      <h3>Assign</h3>
+
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label for="assignTo">Assign to</label>
+          <input type="text" id="assignTo" class="form-control" placeholder="Everyone">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <label>Due</label>
+        <input type="date" class="form-control" placeholder="2023-01-01">
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label>Available from</label>
+          <input type="date" class="form-control" placeholder="2023-01-01">
+        </div>
+
+        <div class="col-md-4">
+          <label>Until</label>
+          <input type="date" class="form-control" placeholder="2023-01-01">
+        </div>
+      </div>
+    </form>
+    <div class="float-end">
+      <button type="button" class="btn btn-secondary btn-sm">
+        <a href="/Kanbas/Courses/Assignments/screen.html">
+          Cancel
+        </a>
+      </button>
+      <button type="button" class="btn btn-danger btn-sm">
+        <a href="/Kanbas/Courses/Assignments/screen.html">
+          Save
+        </a>
+      </button>
+  </div>
+</div>
+</body>
+</html>
+>>>>>>> Stashed changes

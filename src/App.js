@@ -1,13 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import {HashRouter, Link, Navigate,Route, Routes} from "react-router-dom";
+import Kanbas from "./Kanbas";
+import JavaScript from "./lab3/JavaScript";
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <HashRouter>
+      <JavaScript/>
+      <div>
+        <Routes>
+          <Route path="/" element={<Navigate to="Kanbas"/>}/>
+          <Route path="/Kanbas/*" element={<Kanbas/>}/>
+        </Routes>
+      </div>
+    </HashRouter>
   );
 }
 
