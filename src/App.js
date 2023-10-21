@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css";
 import {HashRouter, Link, Navigate,Route, Routes} from "react-router-dom";
 import Kanbas from "./Kanbas";
 import JavaScript from "./lab3/JavaScript";

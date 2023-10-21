@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import '/styles.css';
-import '/lib/font-awesome/css/font-awesome.css';
-import '/lib/bootstrap/bootstrap.css';
 import './index.css';
 
 function AccountEditor() {
