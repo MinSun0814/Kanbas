@@ -1,0 +1,9 @@
+.fixed-width-card {
+  width: 270px;
+  max-width: 270px;
+  margin: 20px 0px 0px 20px;
+}
+
+.wd-flex-grow-1{
+  margin-left: 20px;
+}

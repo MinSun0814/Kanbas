@@ -1,0 +1,81 @@
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import db from "../../Database";
+
+function ModuleList() {
+  const { courseId } = useParams();
+  const [modules, setModules] = useState(db.modules.filter(module => module.course === courseId));
+  const [module, setModule] = useState({
+    name: "New Module",
+    description: "New Description",
+    course: courseId,
+    _id: ""
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setModule({
+      ...module,
+      [name]: value,
+    });
+  };
+
+  const addModule = () => {
+    setModules([...modules, { ...module, _id: new Date().getTime().toString() }]);
+    setModule({ ...module, name: '', description: '' });
+  };
+
+  const deleteModule = (moduleId) => {
+    setModules(modules.filter((module) => module._id !== moduleId));
+  };
+
+  const editModule = (moduleId) => {
+    const modToEdit = modules.find((module) => module._id === moduleId);
+    setModule(modToEdit);
+  };
+
+  const updateModule = () => {
+    setModules(modules.map((m) => (m._id === module._id ? module : m)));
+  };
+
+  return (
+      <div>
+        <div>
+          <label>
+            Module Name:
+            <input type="text" name="name" value={module.name} onChange={handleChange} />
+          </label>
+          <label>
+            Module Description:
+            <input type="text" name="description" value={module.description} onChange={handleChange} />
+          </label>
+          <button onClick={addModule}>Add Module</button>
+          <button onClick={updateModule}>Update Module</button>
+        </div>
+        <ul className="list-group">
+          {modules.map((module, index) => (
+              <li key={index} className="list-group-item">
+                <h3>{module.name}</h3>
+                <p>{module.description}</p>
+                <button onClick={() => deleteModule(module._id)}>Delete</button>
+                <button onClick={() => editModule(module._id)}>Edit</button>
+                {
+                    module.lessons && (
+                        <ul className="list-group">
+                          {module.lessons.map((lesson, index) => (
+                              <li key={index} className="list-group-item">
+                                <h4>{lesson.name}</h4>
+                                <p>{lesson.description}</p>
+                              </li>
+                          ))}
+                        </ul>
+                    )
+                }
+              </li>
+          ))}
+        </ul>
+      </div>
+  );
+}
+
+export default ModuleList;

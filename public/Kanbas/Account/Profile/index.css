@@ -1,0 +1,17 @@
+.fa-user{
+  font-size:8em;
+}
+.TextAreaNoBorder{
+  Border: none;
+  resize: none;
+}
+
+.btn.btn-secondary.btn-sm a{
+  color: white;
+  text-decoration: none;
+}
+
+.wd-flex-grow-1 {
+  margin-left: 80px;
+}
+

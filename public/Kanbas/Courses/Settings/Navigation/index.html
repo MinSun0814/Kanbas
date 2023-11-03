@@ -1,26 +1,42 @@
-<h1>Navigation</h1>
-<button><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Course Details</a></button>
-<button><a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a></button>
+<link rel="stylesheet" href="/lib/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="/styles.css" />
+
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">CS 5610 Fall 2023</a></li>
+        <li class="breadcrumb-item"><a href="#">Settings</a></li>
+        <li class="breadcrumb-item active" aria-current="pages">Navigation</li>
+    </ol>
+</nav>
+
+<button type="button" class="btn btn-secondary   btn-sm">
+    <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Course Details</a>
+</button>
+<button type="button" class="btn btn-secondary   btn-sm">
+    <a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a>
+</button>
 <p>Drag and drop courses here to render them in the course navigation</p>
-<ul>
-    <li>Home</li>
-    <li>Modules</li>
-    <li>Piazza</li>
-    <li>Zoom Meetings</li>
-    <li>Assignments</li>
-    <li>Quizzes</li>
-    <li>Grades</li>
-    <li>People</li>
-    <li>Panopto Videos</li>
+<ul class="list-group">
+    <li class="list-group-item">Home</li>
+    <li class="list-group-item">Modules</li>
+    <li class="list-group-item">Piazza</li>
+    <li class="list-group-item">Zoom Meetings</li>
+    <li class="list-group-item">Assignments</li>
+    <li class="list-group-item">Quizzes</li>
+    <li class="list-group-item">Grades</li>
+    <li class="list-group-item">People</li>
+    <li class="list-group-item">Panopto Videos</li>
 </ul>
 <p>Drag items here to hide them from Students</p>
 <ul>
-    <li>Chat</li>
-    <li>SCORM</li>
-    <li>Attendance</li>
-    <li>Top Hat</li>
-    <li>Syllabus</li>
-    <li>Perusall</li>
-    <li>Microsoft Team Meetings</li>
+    <li class="list-group-item">Chat</li>
+    <li class="list-group-item">SCORM</li>
+    <li class="list-group-item">Attendance</li>
+    <li class="list-group-item">Top Hat</li>
+    <li class="list-group-item">Syllabus</li>
+    <li class="list-group-item">Perusall</li>
+    <li class="list-group-item">Microsoft Team Meetings</li>
 </ul>
-<button>save</button>
+<button type="button" class="btn btn-danger btn-sm">
+    <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Save</a>
+</button>

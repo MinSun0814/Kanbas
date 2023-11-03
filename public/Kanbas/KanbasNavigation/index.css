@@ -1,0 +1,41 @@
+.wd-Kanbas-navigation{
+  background: black;
+  list-style: none;
+  padding: 0px;
+  width: 80px;
+  margin: 0px;
+}
+
+.wd-Kanbas-navigation a{
+  color: white;
+  text-decoration: none;
+}
+
+.wd-Kanbas-navigation li {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.wd-Kanbas-navigation li.wd-active {
+  background-color: white;
+}
+
+.wd-Kanbas-navigation li.wd-active a{
+  color: red;
+}
+
+.wd-Kanbas-navigation a i{
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.wd-Kanbas-navigation a .fa-user{
+  color: white;
+}
+
+.wd-Kanbas-navigation .wd-active a .fa-user {
+  color: black;
+}

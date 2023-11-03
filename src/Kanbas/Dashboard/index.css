@@ -1,0 +1,39 @@
+.fixed-width-card {
+  width: 270px;
+  max-width: 270px;
+  margin: 20px 20px 20px 20px;
+}
+
+.wd-flex-grow-1{
+  margin-left: 20px;
+}
+
+.custom-gap > .col {
+  margin: 10px;
+}
+
+.redLink {
+  color: red;
+  text-decoration: none;
+}
+
+.course-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 15%;
+  padding: 10px;
+  margin: 0 5px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.form-btn:hover {
+  background-color: white;
+  color: #4CAF50;
+}

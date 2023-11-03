@@ -1,27 +1,74 @@
-<table width="100%">
+<html>
+<head>
+  <link rel="stylesheet" href="/styles.css"/>
+  <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css"/>
+  <link rel="stylesheet" href="/lib/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css"/>
+  <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css"/>
+  <link rel="stylesheet" href="index.css">
+</head>
 
-    <tr>
-        <td valign="top">
-            <h2>Kanbas Navigation</h2>
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account </a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html"> Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html"> Courses</a></li>
-            </ul>                 
-        </td>
+<body>
+<div class="d-block d-md-none">
+  <a href="/Kanbas/KanbasNavigation">Kanbas Navigation</a>
+  <a href="/Kanbas/Courses/CourseNavigation">Courses Navigation</a>
+</div>
+<div class="wd-flex-row-container">
+  <div class="wd-bg-color-black d-none d-md-block">
+    <ul class="wd-Kanbas-navigation">
+      <li class="wd-active"><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"
+                                                           aria-hidden="true"></i>Account</a></li>
+      <li><a href="/Kanbas/Dashboard/screen.html"> <i class="fa fa-tachometer"
+                                                      aria-hidden="true"></i>Dashboard</a></li>
+      <li><a href="/Kanbas/Courses/Home/screen.html"> <i class="fa fa-book"
+                                                                           aria-hidden="true"></i>Courses</a>
+      </li>
+      <li><a href="/Kanbas/Calender/screen.html"><i class="fa fa-calendar" aria-hidden="true"></i>Calender</a>
+      </li>
+      <li><a href="/Kanbas/Inbox/screen.html"> <i class="fa fa-inbox" aria-hidden="true"></i></br>
+        Inbox</a></li>
+    </ul>
+  </div>
 
-        <td valign="top">
-            <h1>Profile</h1>
-<h2>Min Sun</h2>
-<button>
-    <a href="/Kanbas/Account/Profile/EditProfile/screen.html">Edit Profile</a>
-</button>
-<h3>Contact</h3>
-<p>No registered service, you can add some on the settings page.</p>
-<h3>Biography</h3>
-<textarea cols="40" rows="5">Student at Northeastern University.</textarea>
-<h3>Links</h3>
-<p><a href="https://www.google.com">Google</a></p>
-        </td>
-    </tr>
-</table>
+  <div>
+    <ul class="wd-course-navigation">
+      <li><a href="...">Notifications </a></li>
+      <li class="wd-active"><a href="/Kanbas/Account/Profile/screen.html"> Profile</a></li>
+      <li><a href="..."> Files</a></li>
+      <li><a href="..."> Settings</a></li>
+      <li><a href="..."> EPortfolios</a></li>
+      <li><a href="..."> Shared Content</a></li>
+      <li><a href="..."> The Hub</a></li>
+      <li><a href="..."> Qwickly Course Tools</a></li>
+      <li><a href="..."> Global Announcements</a></li>
+    </ul>
+  </div>
+
+  <div class="wd-flex-grow-1">
+    <li class="d-flex justify-content-between align-items-center">
+      <div>
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+      <div style="margin-right: 40px;">
+        <button type="button" class="btn btn-secondary btn-sm">
+          <a href="/Kanbas/Account/Profile/EditProfile/screen.html">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+            Edit Profile
+          </a>
+        </button>
+      </div>
+    </li>
+    <h1>Min Sun</h1>
+
+    <h3>Contact</h3>
+    <p>No registered service, you can add some on the settings page.</p>
+    <h3>Biography</h3>
+    <textarea class="TextAreaNoBorder" cols="40"
+              rows="3">Student at Northeastern University.</textarea>
+    <h3>Links</h3>
+    <p><a href="https://www.google.com" class="wd-fg-color-red">Google</a></p>
+    <p><a href="https://www.youtube.com" class="wd-fg-color-red">Youtube</a></p>
+  </div>
+</div>
+</body>
+</html>

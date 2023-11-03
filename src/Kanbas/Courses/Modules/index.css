@@ -1,0 +1,32 @@
+.module-control {
+  margin-bottom: 20px;
+}
+
+.module-textarea {
+  width: 90%;
+  margin: 5px 0;
+}
+
+.module-input{
+  width: 20%;
+  margin: 5px 0;
+}
+
+.module-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.module-item button {
+  margin-left: 5px;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-warning,
+.btn-danger {
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}

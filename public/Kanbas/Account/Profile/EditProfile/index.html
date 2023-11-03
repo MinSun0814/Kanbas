@@ -1,19 +1,60 @@
-<h1>Min Sun</h1>
-Name: <input value="Min Sun"/>
-Pronouns: <select>
-    <option>He/Him</option>
-    <option>She/Her</option>
-    <option>They/Them</option>
-    <option>Other</option>
-</select>
-Title: <input value="Student"/>
-<h2>Contact</h2>
-<p>No registered service, you can add some on the settings page.</p>
-<h2>Biography</h2>
-<textarea cols="40" rows="5">Student at Northeastern University.</textarea>
-<h2>Links</h2>
-<ul>
-    <li><a href="https://www.google.com">Google</a></li>
+<link rel="stylesheet" href="/styles.css"/>
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css"/>
+<link rel="stylesheet" href="/lib/bootstrap/bootstrap.css"/>
+<link rel="stylesheet" href="index.css">
+<ul class="info-list">
+  <li class="d-flex justify-content-between align-items-center">
+
+    <div>
+      <i class="fa fa-user" aria-hidden="true"></i>
+    </div>
+    <div style="margin-right: 40px;">
+      <button type="button" class="btn btn-secondary btn-sm">
+        <a href="/Kanbas/Account/Profile/screen.html">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          Cancel Editing
+        </a>
+      </button>
+    </div>
+
+  </li>
+
+  <li>Name: <input class="form-control" value="Min Sun"/></li>
+  <li>Pronouns:
+    <select>
+      <option>He/Him</option>
+      <option>She/Her</option>
+      <option>They/Them</option>
+      <option>Other</option>
+    </select>
+  </li>
+  <li>Title: <input class="form-control" value="Student"/></li>
+  <li><h2>Contact</h2></li>
+  <li>No registered service, you can add some on the settings page.</li>
+  <li><h2>Biography</h2></li>
+  <li><textarea class="form-control" cols="40"
+                rows="5">Student at Northeastern University.</textarea></li>
+  <li><h2>Links</h2></li>
 </ul>
-<button><a href="/Kanbas/Account/Profile/screen.html">cancel</a></button>
-<button><a href="/Kanbas/Account/Profile/screen.html">save</a></button>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p>Title</p>
+      <input class="form-control" value="Google"/>
+      <input class="form-control" value="Youtube"/>
+    </div>
+    <div class="col">
+      <p>URL</p>
+      <input class="form-control" value="https://www.google.com"/>
+      <input class="form-control" value="https://www.youtube.com"/>
+    </div>
+  </div>
+</div>
+</br>
+<button type="button" class="btn btn-secondary btn-sm">
+  <a href="/Kanbas/Account/Profile/screen.html">Cancel</a>
+</button>
+<button type="button" class="btn btn-danger btn-sm">
+  <a href="/Kanbas/Account/Profile/screen.html"></i>Save Profile</a>
+</button>

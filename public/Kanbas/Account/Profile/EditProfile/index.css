@@ -1,0 +1,36 @@
+.fa-user{
+  font-size:8em;
+}
+
+.btn.btn-secondary.btn-sm a{
+  color: white;
+  text-decoration: none;
+}
+
+.info-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+}
+
+.btn.btn-danger.btn-sm a{
+  color: white;
+  text-decoration: none;
+}
+
+.wd-flex-grow-1 {
+  margin-left: 80px;
+}
+
+.form-control{
+  width: 50%;
+}
+
+.container {
+  max-width: 50%;
+  margin-left: 0;
+  margin-right: auto;
+}

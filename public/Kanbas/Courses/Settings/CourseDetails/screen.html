@@ -1,103 +1,263 @@
-<table width="100%">
-    <tr>
-        <td valign="top">
-            <h2>Settings</h2>
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account </a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html"> Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html"> Courses</a></li>
-            </ul>                 
-        </td>
+<html>
+<head>
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css"/>
+    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css"/>
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/styles.css"/>
+</head>
 
-        <td valign="top">
-            <h2>Course Navigation</h2>
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home </a></li>
-                <li><a href="/Kanbas/Courses/Modules/screen.html"> Modules</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-                <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
-            </ul>   
-        </td>
+<body>
+<input type="checkbox" id="left-sidebar-toggle" class="d-none">
+<label for="left-sidebar-toggle" class="d-md-none">
+    <a href="/Kanbas/KanbasNavigation"><i class="fa fa-bars" aria-hidden="true"></i></a>
+</label>
 
-        <td valign="top">
-            <h2>Course Details</h2>
-            <button><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Course Details</a></button>
-<button><a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a></button>
-<b><div>Image:</div></b>
-<img width="400px"
-    src="https://www.eecs.mit.edu/wp-content/uploads/2021/06/compscihero.jpg"/>
-<br/><br/>
-<b>Name:</b>
-<p>CS 5610 Web Development Fall 2023</p>
-<b>Course Code:</b>
-<p>CS5610</p>
-<b>Blueprint Course:</b>
-<p>No</p>
-<b>Course Template:</b>
-<input type="checkbox"/> Enable course as a Course Template</br></br>
-<b>Time Zone:</b></br></br>
-<select>
-    <option>Eastern Time(US & Canada)(-5:00/-4:00)</option>
-    <option>Central Time(US & Canada)(-6:00/-5:00)</option>
-    <option>Mountain Time(US & Canada)(-7:00/-6:00)</option>
-</select>
-<br/><br/>
-<b>SIS ID:</b>
-<p>CS5610.12345.202310</p>
-<b>Subaccount:</b>
-<p>CS Grad</p>
-<b>Term:</b>
-<p>Fall 2023 Semester Full Term</p>
-<b>Participation</b>
-<select>
-    <option>Term</option>
-</select></br></br>
-<b><div>Start:</div></b>
-  <input type="date"
-         id="text-fields-date"
-         value="2023-01-01"/><br/></br>
-<b><div>End:</div></b>
-  <input type="date"
-         id="text-fields-date"
-         value="2023-01-01"/><br/></br>
-<input type="checkbox"/> Restrict students from viewing course before term start date</br>
-<input type="checkbox"/> Restrict students from viewing course after term end date</br></br>
-<b>Default Due Date:</b>
-<select>
-    <option>Account Default(11:59pm)</option>
-    <option>Manually</option>
-</select></br></br>
-<b>Language:</b>
-<select>
-    <option>Not Set(user-configurable, default to English)</option>
-</select></br></br>
-<b>File Storage:</b> 10000 megabytes</br></br>
-<input type="checkbox"/> Launch SpeedGrader Filtered by Student Group</br>
-<input type="checkbox"/> Enable course grading scheme</br></br>
-<b>License:</b>
-<select>
-    <option>Private(Copyrighted)</option>
-    <option>Public Domain</option>
-</select></br></br>
-<b>File Copyright:</b></br>
-<input type="checkbox"/>Copyright and License information must be provided for files before they are published</br></br>
-<b>Visibility:</b>
-<p>If you need to make your course public please contact your administrator/support</p>
-<select>
-    <option>Course</option>
-</select></br>
-<input type="checkbox"/> Include this course in the public course index</br>
-<b>Format:</b></br>
-<select>
-    <option>On-Campus</option>
-    <option>Online</option>
-</select></br></br>
-<b>Mastery Path:</b></br>
-<input type="checkbox"/> Enable individual learning paths for students based on assessment</br></br>
-<b>Description:</b></br>
-<textarea cols="40" rows="5"></textarea></br></br>
-<button>Update Course Details</button>
-        </td>
-    </tr>
-</table>
+<input type="checkbox" id="right-sidebar-toggle" class="d-none">
+<label for="left-sidebar-toggle" class="d-md-none" style="position: fixed; right: 5px;">
+    <a href="/Kanbas/Courses/CourseNavigation"><i class="fa fa-chevron-down"
+                                                  aria-hidden="true"></i></a>
+</label>
+
+<div class="wd-flex-row-container">
+    <div class="wd-bg-color-black d-none d-md-block ">
+        <ul class="wd-Kanbas-navigation">
+            <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"
+                                                                 aria-hidden="true"></i>Account</a></li>
+            <li><a href="/Kanbas/Dashboard/screen.html"> <i class="fa fa-tachometer"
+                                                            aria-hidden="true"></i>Dashboard</a></li>
+            <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"> <i class="fa fa-book"
+                                                                                 aria-hidden="true"></i>Courses</a>
+            </li>
+            <li><a href="/Kanbas/Calender/screen.html"><i class="fa fa-calendar" aria-hidden="true"></i>Calender</a>
+            </li>
+            <li><a href="/Kanbas/Inbox/screen.html"> <i class="fa fa-inbox" aria-hidden="true"></i></br>
+                Inbox</a></li>
+        </ul>
+    </div>
+
+
+    <div>
+        <ul class="wd-course-navigation d-none d-md-block">
+            <li><a href="/Kanbas/Courses/Home/screen.html">Home </a></li>
+            <li><a href="/Kanbas/Courses/Modules/screen.html"> Modules</a></li>
+            <li><a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a></li>
+            <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+            <li class="wd-active"><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="wd-flex-grow-1 ms-3">
+
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/Kanbas/Dashboard/screen.html">CS 5610 Fall 2023</a></li>
+                <li class="breadcrumb-item active" aria-current="Pages">Settings</li>
+                <li class="breadcrumb-item active" aria-current="Pages">Course Details</li>
+            </ol>
+        </nav>
+
+        <button type="button" class="btn btn-sm btn-secondary"><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Course Details</a></button>
+        <button type="button" class="btn btn-sm btn-secondary"><a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a></button>
+        </br></br>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Image:</label>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="https://www.eecs.mit.edu/wp-content/uploads/2021/06/compscihero.jpg"/>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Name:</label>
+            <div class="col-sm-10">
+                <p>CS 5610 Web Development Fall 2023</p>
+            </div>
+        </div>
+
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Course Code:</label>
+            <div class="col-sm-10">
+                <p>CS5610.12345.202310</p>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Blueprint Course:</label>
+            <div class="col-sm-10">
+                <p>No</p>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Course Template</label>
+            <div class="col-sm-10">
+                <input type="checkbox">
+                <label >Enable course as a Course Template</label>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Time Zone:</label>
+            <div class="col-sm-10">
+                <select>
+                    <option>Eastern Time(US & Canada)(-5:00/-4:00)</option>
+                    <option>Central Time(US & Canada)(-6:00/-5:00)</option>
+                    <option>Mountain Time(US & Canada)(-7:00/-6:00)</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="row mb-3">
+            <label class="col-sm-2">SSID:</label>
+            <div class="col-sm-10">
+                <p>CS5610.123456.789</p>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Subaccount:</label>
+            <div class="col-sm-10">
+                <p>CS Grad</p>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Term:</label>
+            <div class="col-sm-10">
+                <p>Fall 2023</p>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Start</label>
+            <div class="col-sm-10">
+                <input type="date">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">End</label>
+            <div class="col-sm-10">
+                <input type="date">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-sm-10">
+                <input type="checkbox">
+                <label >Restrict students from viewing course before term start date</label></br>
+                <input type="checkbox">
+                <label >Restrict students from viewing course after term end date</label>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Default Due time:</label>
+            <div class="col-sm-10">
+                <select>
+                    <option>Account Default(11:59pm)</option>
+                    <option>Manually</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Language:</label>
+            <div class="col-sm-10">
+                <select>
+                    <option>Not set</option>
+                    <option>English</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="row mb-3">
+            <label class="col-sm-2">File Storage:</label>
+            <div class="col-sm-10">
+                <p>10000 megabytes</p>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Large Course</label>
+            <div class="col-sm-10">
+                <input type="checkbox">
+                <label >Launch SpeedGrader Filtered by Student Group</label>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Grading Scheme</label>
+            <div class="col-sm-10">
+                <input type="checkbox">
+                <label >Enable course grading scheme</label>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">License</label>
+            <div class="col-sm-10">
+                <select>
+                    <option>Private (Copyrighted)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">File Copyright</label>
+            <div class="col-sm-10">
+                <input type="checkbox">
+                <label >Copyright and license information must be provided for files before they are published</label>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Visibility</label>
+            <div class="col-sm-10">
+                <p>If you need to make your course public please contact your administrator/support</p>
+                <select>
+                    <option>Course</option>
+                </select>
+                <br/>
+                <input type="checkbox">
+                <label >Include this course in the public course index</label>
+            </div>
+        </div>
+
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Format:</label>
+            <div class="col-sm-10">
+                <input type="checkbox">
+                <label >On-Campus</label>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Mastery Paths:</label>
+            <div class="col-sm-10">
+                <input type="checkbox">
+                <label >Enable individual learning paths for students based on assessment</label>
+            </div>
+        </div>
+
+
+        <div class="row mb-3">
+            <label class="col-sm-2">Description:</label>
+            <div class="col-sm-10">
+            <textarea class="form-control" cols="40"
+                      rows="5"></textarea>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-danger btn-sm">
+            <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Update Course Details</a>
+        </button>
+
+    </div>
+</body>
+</html>
