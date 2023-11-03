@@ -32,8 +32,8 @@ function Dashboard({ courses, course, setCourse, addNewCourse, updateCourse, del
                     <p className="card-text">
                       <Link className="redLink" to={`/Kanbas/Courses/${c._id}`}>This is the link to the course.</Link>
                     </p>
-                    <button onClick={() => deleteCourse(c._id)}>Delete</button>
-                    <button onClick={() => setCourse(c)}>Edit</button>
+                    <button class= "btn btn-danger"onClick={() => deleteCourse(c._id)}>Delete</button>
+                    <button class= "btn btn-warning"onClick={() => setCourse(c)}>Edit</button>
                   </div>
                 </div>
               </div>

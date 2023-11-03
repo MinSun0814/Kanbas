@@ -5,6 +5,8 @@ import Kanbas from "./Kanbas";
 import HelloWorld from "./Labs/a3/HelloWorld";
 import { HashRouter, Link, Navigate, Route, Routes } from "react-router-dom";
 import StateManagement from "./Lectures/StateManagement";
+import Assignments from "./Kanbas/Courses/Assignments";
+import AssignmentEditor from "./Kanbas/Courses/Assignments/AssignmentEditor";
 
 function App() {
   const screen = "Labs";
@@ -12,11 +14,14 @@ function App() {
       <HashRouter>
         <div>
           <Routes>
-            <Route path="/" element={<Navigate to="Kanbas" />} />
+            <Route path="/" element={<Navigate to="labs/a4" />} />
             <Route path="/Hello" element={<HelloWorld />} />
             <Route path="/Labs/*" element={<Labs />} />
             <Route path="/Kanbas/*" element={<Kanbas />} />
             <Route path="/Lectures" element={<StateManagement />} />
+            <Route path="/Kanbas/Courses/Assignments/Editor/:id" component={AssignmentEditor} />
+            <Route path="/Kanbas/Courses/Assignments/Editor" component={AssignmentEditor} />
+            <Route path="/Kanbas/Courses/Assignments" component={Assignments} />
           </Routes>
           {/* {screen === "Hello" && <HelloWorld />}
         {screen === "Labs" && <Labs />}

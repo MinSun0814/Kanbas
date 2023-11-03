@@ -4,6 +4,7 @@ import Assignment4 from "./a4";
 import Assignment5 from "./a5";
 import store from "./store";
 import {Provider} from "react-redux";
+import Kanbas from "../Kanbas";
 
 function Labs() {
   const { pathname } = useLocation();
@@ -31,13 +32,18 @@ function Labs() {
         >
           Assignment 5
         </Link>
+        <Link
+          to="/Kanbas"
+          className={`nav-link ${pathname.includes("Kanbas") ? "active" : ""}`}
+        >
+          Kanbas
+        </Link>
       </div>
       <Routes>
-        {/* <Route path="/" element={<Assignment3 />} /> */}
-        <Route path="/" element={<Navigate to="a3" />} />
         <Route path="a3/*" element={<Assignment3 />} />
-        <Route path="a4" element={<Assignment4 />} />
+        <Route path="a4/*" element={<Assignment4 />} />
         <Route path="a5" element={<Assignment5 />} />
+        <Route path="Kanbas/*" element={<Kanbas />} />
       </Routes>
       {/* <Assignment3 />
       <Assignment4 />
