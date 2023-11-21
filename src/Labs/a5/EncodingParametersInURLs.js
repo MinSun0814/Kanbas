@@ -28,7 +28,7 @@ function EncodingParametersInURLs() {
         />
         <a
             className="btn btn-primary"
-            href={`http://localhost:4000/a5/assignment/score/${newScore}`}
+            href={`https://kanbas-node-server-a55r.onrender.com/a5/assignment/score/${newScore}`}
         >
           Update Score
         </a>
@@ -41,20 +41,20 @@ function EncodingParametersInURLs() {
         />
         <a
             className="btn btn-primary"
-            href={`http://localhost:4000/a5/assignment/completed/${newCompleted}`}
+            href={`https://kanbas-node-server-a55r.onrender.com/a5/assignment/completed/${newCompleted}`}
         >
           Update Completed Status
         </a>
 
         <input className="form-control" type="text" value={assignment.title}
                 onChange={(e) => setAssignment({...assignment, title: e.target.value})}/>
-        <a className="btn btn-primary" href={`http://localhost:4000/a5/assignment/title/${assignment.title}`}>Update Title</a>
+        <a className="btn btn-primary" href={`https://kanbas-node-server-a55r.onrender.com/a5/assignment/title/${assignment.title}`}>Update Title</a>
 
         <h4>Assignment</h4>
-        <a className="btn btn-primary" href="http://localhost:4000/a5/assignment">Get Assignment</a>
+        <a className="btn btn-primary" href="https://kanbas-node-server-a55r.onrender.com/a5/assignment">Get Assignment</a>
 
         <h4>Assignment Title</h4>
-        <a className="btn btn-primary" href="http://localhost:4000/a5/assignment/title">Get Title</a>
+        <a className="btn btn-primary" href="https://kanbas-node-server-a55r.onrender.com/a5/assignment/title">Get Title</a>
 
         <h4>Calculator</h4>
         <input
@@ -66,24 +66,24 @@ function EncodingParametersInURLs() {
 
         <h4>Query Parameters</h4>
         <a
-            href={`http://localhost:4000/a5/calculator?a=${a}&b=${b}&operation=add`}
+            href={`https://kanbas-node-server-a55r.onrender.com/a5/calculator?a=${a}&b=${b}&operation=add`}
             className="btn btn-primary">
           Add {a} + {b}
         </a>
         <a
-            href={`http://localhost:4000/a5/calculator?a=${a}&b=${b}&operation=subtract`}
+            href={`https://kanbas-node-server-a55r.onrender.com/a5/calculator?a=${a}&b=${b}&operation=subtract`}
             className="btn btn-danger">
           Subtract {a} - {b}
         </a>
 
         <h4>Path Parameters</h4>
         <a
-            href={`http://localhost:4000/a5/add/${a}/${b}`}
+            href={`https://kanbas-node-server-a55r.onrender.com/a5/add/${a}/${b}`}
             className="btn btn-primary">
           Add {a} + {b}
         </a>
         <a
-            href={`http://localhost:4000/a5/subtract/${a}/${b}`}
+            href={`https://kanbas-node-server-a55r.onrender.com/a5/subtract/${a}/${b}`}
             className="btn btn-danger">
           Subtract {a} - {b}
         </a>
