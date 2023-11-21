@@ -26,12 +26,11 @@ function Dashboard({ course, setCourse }) {
 
   const addNewCourse = async () => {
     try {
-      const response = await axios.post(URL, course);
+      const response = await axios.post(URL, newCourse);
       setCourses([...courses, response.data]);
-      setCourse({ name: '', number: '', startDate: '', endDate: '' });
+      setNewCourse({ name: '', number: '', startDate: '', endDate: '' }); // Reset new course form
     } catch (error) {
       console.error('Error adding new course:', error);
-      // Optionally handle errors here
     }
   };
 
