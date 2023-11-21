@@ -1,35 +1,86 @@
-import React from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
-import db from "../../../Database";
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+const AssignmentEditor = () => {
+  const [assignmentName, setAssignmentName] = useState('');
+  const [description, setDescription] = useState('');
+  const [points, setPoints] = useState(0);
+  const [assignmentGroup, setAssignmentGroup] = useState('Assignments');
+  const [displayGrade, setDisplayGrade] = useState('Percentage');
+  const [submissionType, setSubmissionType] = useState('Online');
+  const [submissionAttempts, setSubmissionAttempts] = useState('1');
+  const [plagiarismReview, setPlagiarismReview] = useState('None');
+  const [isTextEntry, setIsTextEntry] = useState(false);
+  const [isGroupAssignment, setIsGroupAssignment] = useState(false);
+  const [isPeerReview, setIsPeerReview] = useState(false);
+  const [assignTo, setAssignTo] = useState('Everyone');
+  const [dueDate, setDueDate] = useState('');
+  const [availableFrom, setAvailableFrom] = useState('');
+  const [untilDate, setUntilDate] = useState('');
 
-function AssignmentEditor() {
-  const { assignmentId } = useParams();
-  const assignment = db.assignments.find(
-      (assignment) => assignment._id === assignmentId);
-
-
-  const { courseId } = useParams();
-  const navigate = useNavigate();
-  const handleSave = () => {
-    console.log("Actually saving assignment TBD in later assignments");
-    navigate(`/Kanbas/Courses/${courseId}/Assignments`);
+  const handleSubmit = () => {
+    console.log('Assignment saved');
+    // Here you can handle the form submission logic
   };
+
   return (
       <div>
-        <h2>Assignment Name</h2>
-        <input value={assignment.title}
-               className="form-control mb-2" />
-        <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-              className="btn btn-danger">
-          Cancel
-        </Link>
-        <button onClick={handleSave} className="btn btn-success me-2">
-          Save
-        </button>
+        {/* ... rest of the form elements ... */}
+
+        <div className="row mb-3">
+          <div className="col-md-4">
+            <label>Due</label>
+            <input
+                type="date"
+                className="form-control"
+                value={dueDate}
+                onChange={(e) => setDueDate(e.target.value)}
+            />
+          </div>
+        </div>
+
+        <div className="row mb-3">
+          <div className="col-md-4">
+            <label>Available from</label>
+            <input
+                type="date"
+                className="form-control"
+                value={availableFrom}
+                onChange={(e) => setAvailableFrom(e.target.value)}
+            />
+          </div>
+
+          <div className="col-md-4">
+            <label>Until</label>
+            <input
+                type="date"
+                className="form-control"
+                value={untilDate}
+                onChange={(e) => setUntilDate(e.target.value)}
+            />
+          </div>
+        </div>
+
+        <div className="float-end">
+          <button
+              type="button"
+              className="btn btn-secondary btn-sm"
+              onClick={() => window.location.href="/Kanbas/Courses/Assignments/screen.html"}
+          >
+            Cancel
+          </button>
+          <button
+              type="button"
+              className="btn btn-danger btn-sm"
+              onClick={handleSubmit}
+          >
+            Save
+          </button>
+        </div>
       </div>
   );
-}
+};
 
-
+ReactDOM.render(<AssignmentEditor />, document.getElementById('root'));
 export default AssignmentEditor;

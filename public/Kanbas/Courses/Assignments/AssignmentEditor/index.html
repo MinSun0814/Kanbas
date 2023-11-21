@@ -1,124 +1,85 @@
-<link rel="stylesheet" href="/lib/bootstrap/bootstrap.css"/>
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css"/>
-<link rel="stylesheet" href="/styles.css"/>
-<link rel="stylesheet" href="./index.css"/>
-  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/Kanbas/Dashboard/screen.html">CS 5610 Fall 2023</a></li>
-      <li class="breadcrumb-item"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Assignment Editor</li>
-    </ol>
-  </nav>
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-      <div>
-        <label >Assignment Name</label>
-        <input type="number" class="form-control" max="100" min="0" placeholder="A1">
-      </div>
+const AssignmentEditor = () => {
+const [assignmentName, setAssignmentName] = useState('');
+const [description, setDescription] = useState('');
+const [points, setPoints] = useState(0);
+const [assignmentGroup, setAssignmentGroup] = useState('Assignments');
+const [displayGrade, setDisplayGrade] = useState('Percentage');
+const [submissionType, setSubmissionType] = useState('Online');
+const [submissionAttempts, setSubmissionAttempts] = useState('1');
+const [plagiarismReview, setPlagiarismReview] = useState('None');
+const [isTextEntry, setIsTextEntry] = useState(false);
+const [isGroupAssignment, setIsGroupAssignment] = useState(false);
+const [isPeerReview, setIsPeerReview] = useState(false);
+const [assignTo, setAssignTo] = useState('Everyone');
+const [dueDate, setDueDate] = useState('');
+const [availableFrom, setAvailableFrom] = useState('');
+const [untilDate, setUntilDate] = useState('');
 
-      <div>
-        <label >Description</label>
-        <textarea class="form-control" rows="5" placeholder="This is the assignment description."></textarea>
-      </div>
+const handleSubmit = () => {
+console.log('Assignment saved');
+// Here you can handle the form submission logic
+};
 
-    <div>
-      <label>Points</label>
-      <input type="number" class="form-control" max="100" min="0" placeholder="100">
-    </div>
+return (
+<div>
+  {/* ... rest of the form elements ... */}
 
-
-        <label>Assignment Groups</label>
-        <select class="form-control">
-          <option>Assignments</option>
-          <option>Quizzes</option>
-          <option>Exams</option>
-          <option>Project</option>
-        </select>
-
-    <label>Display Grade as</label>
-    <select class="form-control">
-      <option>Percentage</option>
-      <option>Points</option>
-      <option>Letter Grade</option>
-    </select>
-
-    <label>Submission Type</label>
-    <select class="form-control">
-      <option>Online</option>
-      <option>On Paper</option>
-      <option>No Submission</option>
-    </select>
-
-
-    <label>Submission Attempts</label>
-    <select class="form-control">
-      <option>1</option>
-      <option>2</option>
-      <option>Unlimited</option>
-    </select>
-
-
-    <label>Plagiarism Review</label>
-    <select class="form-control">
-      <option>None</option>
-      <option>Automated</option>
-      <option>Externam Tool</option>
-    </select>
-
-    <label >Online Text Entry</label><br>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input">
-      <label class="form-check-label">Text Entry</label>
-    </div>
-
-    <label >Group Assignment</label><br>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input">
-      <label class="form-check-label" >This is a group assignment</label>
-    </div>
-
-
-    <label >Peer Revuiew</label><br>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input">
-      <label class="form-check-label" >Require peer review</label>
-    </div>
-
-<form>
-  <h3>Assign</h3>
-
-  <div class="row mb-3">
-    <div class="col-md-4">
-      <label for="assignTo">Assign to</label>
-      <input type="text" id="assignTo" class="form-control" placeholder="Everyone">
-    </div>
-  </div>
-
-    <div class="col-md-4">
+  <div className="row mb-3">
+    <div className="col-md-4">
       <label>Due</label>
-      <input type="date"  class="form-control" placeholder="2023-01-01">
-    </div>
-    <div class="row mb-3">
-    <div class="col-md-4">
-      <label>Available from</label>
-      <input type="date" class="form-control" placeholder="2023-01-01">
-    </div>
-
-    <div class="col-md-4">
-      <label >Until</label>
-      <input type="date" class="form-control" placeholder="2023-01-01">
+      <input
+          type="date"
+          className="form-control"
+          value={dueDate}
+          onChange={(e) => setDueDate(e.target.value)}
+      />
     </div>
   </div>
-</form>
 
-<div class="float-end">
-<button type="button" class="btn btn-secondary btn-sm">
-  <a href="/Kanbas/Courses/Assignments/screen.html">
+  <div className="row mb-3">
+    <div className="col-md-4">
+      <label>Available from</label>
+      <input
+          type="date"
+          className="form-control"
+          value={availableFrom}
+          onChange={(e) => setAvailableFrom(e.target.value)}
+      />
+    </div>
+
+    <div className="col-md-4">
+      <label>Until</label>
+      <input
+          type="date"
+          className="form-control"
+          value={untilDate}
+          onChange={(e) => setUntilDate(e.target.value)}
+      />
+    </div>
+  </div>
+
+  <div className="float-end">
+    <button
+        type="button"
+        className="btn btn-secondary btn-sm"
+        onClick={() => window.location.href="/Kanbas/Courses/Assignments/screen.html"}
+    >
     Cancel
-  </a>
-</button>
-<button type="button" class="btn btn-danger btn-sm">
-  <a href="/Kanbas/Courses/Assignments/screen.html">
-    Save
-  </a>
-</button>
+    </button>
+    <button
+        type="button"
+        className="btn btn-danger btn-sm"
+        onClick={handleSubmit}
+    >
+      Save
+    </button>
+  </div>
 </div>
+);
+};
+
+ReactDOM.render(<AssignmentEditor />, document.getElementById('root'));
