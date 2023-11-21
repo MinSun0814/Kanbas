@@ -4,7 +4,7 @@ import './index.css';
 import axios from "axios";
 
 function Dashboard({ course, setCourse }) {
-  const URL = "https://kanbas-node-server-a55r.onrender.com";
+  const URL = "https://kanbas-node-server-a55r.onrender.com/api/courses";
   const [courses, setCourses] = useState([]);
   const [newCourse, setNewCourse] = useState({ name: '', number: '', startDate: '', endDate: '' });
   const [editingCourse, setEditingCourse] = useState(null);
