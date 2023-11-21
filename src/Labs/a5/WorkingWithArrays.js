@@ -221,13 +221,13 @@ setErrorMessage("Unable to delete todo")
         />
         <a
             className="btn btn-primary"
-            href={`http://localhost:4000/a5/todos/${todoId}/description/${todoDescription}`}
+            href={`https://kanbas-node-server-a55r.onrender.com/a5/todos/${todoId}/description/${todoDescription}`}
         >
           Update Description
         </a>
         <a
             className="btn btn-secondary"
-            href={`http://localhost:4000/a5/todos/${todoId}/completed/${todoCompleted}`}
+            href={`https://kanbas-node-server-a55r.onrender.com/a5/todos/${todoId}/completed/${todoCompleted}`}
         >
           Update Completed
         </a>
