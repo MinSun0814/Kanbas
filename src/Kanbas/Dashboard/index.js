@@ -45,7 +45,6 @@ function Dashboard({ course, setCourse }) {
         setEditingCourse(null); // Reset editing course
       } catch (error) {
         console.error('Error updating course:', error);
-        // Optionally handle errors here
       }
     }
   };

@@ -38,6 +38,12 @@ function Labs() {
         >
           Kanbas
         </Link>
+        <Link
+          to="/project"
+          className={`nav-link ${pathname.includes("project") ? "active" : ""}`}
+        >
+          Project
+        </Link>
       </div>
       <Routes>
         <Route path="a3/*" element={<Assignment3 />} />
@@ -45,9 +51,6 @@ function Labs() {
         <Route path="a5" element={<Assignment5 />} />
         <Route path="Kanbas/*" element={<Kanbas />} />
       </Routes>
-      {/* <Assignment3 />
-      <Assignment4 />
-      <Assignment5 /> */}
     </div>
     </Provider>
   );

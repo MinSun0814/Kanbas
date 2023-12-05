@@ -11,6 +11,15 @@ function EncodingParametersInURLs() {
   const [newScore, setNewScore] = useState(assignment.score);
   const [newCompleted, setNewCompleted] = useState(assignment.completed);
 
+  /*
+  app.get("/poi/:name", (req, res) => {
+   const name = req.params.name;
+   const greeting = "Hello " + name;
+   res.json(greeting);
+});
+   */
+
+
 
   // Other state variables
   const [a, setA] = useState(34);
