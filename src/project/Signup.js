@@ -21,7 +21,7 @@ function Signup() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(user),
-        credentials: 'include' // Include credentials for session cookies
+        credentials: 'include'
       });
 
       if (!response.ok) {
@@ -30,7 +30,6 @@ function Signup() {
       }
 
       const createdUser = await response.json();
-      // Navigate to the UserDetails page for the newly created user
       navigate(`/users/${createdUser._id}`);
     } catch (error) {
       setError(error.message);

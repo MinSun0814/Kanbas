@@ -165,7 +165,6 @@ function Home() {
           {users.map(user => (
               <tr key={user._id}>
                 {editingUserId === user._id ? (
-                    // Edit mode
                     <>
                       <td><input type="text" name="username" value={editedUser.username} onChange={handleInputChange} /></td>
                       <td><input type="text" name="firstName" value={editedUser.firstName} onChange={handleInputChange} /></td>
@@ -184,7 +183,6 @@ function Home() {
                       </td>
                     </>
                 ) : (
-                    // Display mode
                     <>
                       <td>{user.username}</td>
                       <td>{user.firstName}</td>
@@ -199,12 +197,16 @@ function Home() {
                           Update
                         </button>
                         <button
-                            className="btn btn-sm btn-outline-danger"
+                            className="btn btn-sm btn-outline-danger me-2"
                             onClick={() => handleDeleteUser(user._id)}
                         >
                           Delete
                         </button>
+                        <Link to={`/users/${user._id}`}>
+                          <button className="btn btn-sm btn-primary">Details</button>
+                        </Link>
                       </td>
+
                     </>
                 )}
               </tr>

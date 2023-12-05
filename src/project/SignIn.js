@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 function SignIn() {
   const [credentials, setCredentials] = useState({ username: '', password: '' });
-  const [errorMessage, setErrorMessage] = useState(''); // State for error message
+  const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -21,7 +21,7 @@ function SignIn() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(credentials),
-        credentials: 'include' // Include credentials for session cookie
+        credentials: 'include'
       });
 
       if (!response.ok) {
@@ -29,7 +29,7 @@ function SignIn() {
         throw new Error(errorText || 'Failed to sign in');
       }
       const user = await response.json();
-      navigate(`/users/${user._id}`); // Navigate to user details
+      navigate(`/users/${user._id}`);
     } catch (error) {
       console.error('Error during sign-in:', error);
       setErrorMessage(error.message);
@@ -60,7 +60,7 @@ function SignIn() {
         <button type="submit" className="btn btn-sm btn-primary">
           Sign in
         </button>
-        {errorMessage && <div className="error-message">{errorMessage}</div>} {/* Display error message */}
+        {errorMessage && <div className="error-message">{errorMessage}</div>} {/* error message */}
       </form>
   );
 }
