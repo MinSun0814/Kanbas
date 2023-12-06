@@ -6,6 +6,7 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import { useState, useEffect } from "react";
+import Grade from "./Grades";
 import axios from "axios";
 
 function Courses({ courses }) {
@@ -42,7 +43,7 @@ function Courses({ courses }) {
             <Route path="Modules" element={<Modules />} />
             <Route path="Assignments" element={<Assignments />} />
             <Route path="Assignments/:assignmentId" element={<AssignmentEditor />} />
-            <Route path="Grades" element={<h1>Grades</h1>} />
+            <Route path="Grades" element={<Grade />} />
           </Routes>
         </div>
       </div>

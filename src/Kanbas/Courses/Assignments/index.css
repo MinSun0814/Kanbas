@@ -1,0 +1,12 @@
+.assignment-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease;
+}
+
+.assignment-item:hover {
+  background-color: #eaeaea;
+}

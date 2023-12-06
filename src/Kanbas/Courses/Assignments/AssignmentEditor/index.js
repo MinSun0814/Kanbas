@@ -21,14 +21,18 @@ const AssignmentEditor = () => {
 
   const handleSubmit = () => {
     console.log('Assignment saved');
-    // Here you can handle the form submission logic
   };
 
   return (
       <div>
-        {/* ... rest of the form elements ... */}
-
         <div className="row mb-3">
+          <label>Assignment Name</label>
+          <input
+              type="text"
+              className="form-control"
+              value={assignmentName}
+              onChange={(e) => setAssignmentName(e.target.value)}
+          />
           <div className="col-md-4">
             <label>Due</label>
             <input

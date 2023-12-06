@@ -63,7 +63,12 @@ function Dashboard({ course, setCourse }) {
 
   return (
       <div>
-        {/* Form for Adding a New Course */}
+        <nav aria-label="breadcrumb">
+          <ol className="breadcrumb">
+            <li className="breadcrumb-item">CS 5610 Fall 2023</li>
+            <li className="breadcrumb-item active" aria-current="page">Dashboard</li>
+          </ol>
+        </nav>
         <div>
           <input
               type="text"

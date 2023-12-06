@@ -26,23 +26,8 @@ function JavaScript() {
       <h3>JavaScript</h3>
       <FunctionDestructing />
       <Destructing />
-      <Spread />
-      <House />
-      <TemplateLiterals />
       <FindFunction />
-      <JsonStringify />
       <MapFunction />
-      <AddingAndRemovingDataToFromArrays />
-      <WorkingWithArrays />
-      <FunctionParenthesisAndParameters />
-      <ImpliedReturn />
-      <ArrowFunctions />
-      <ES5Functions />
-      <TernaryOperator />
-      <IfElse />
-      <BooleanVariables />
-      <VariableTypes />
-      <VariablesAndConstants />
     </div>
   );
 }
